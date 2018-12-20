@@ -8,6 +8,7 @@ import { SearchBoxDirective } from './search-box.directive';
 import { OrdersComponent } from './orders/orders.component';
 import { InitCapsPipe } from './shared/init-caps.pipe';
 import { LoginModule } from './login/login.module';
+import { AdminModule } from './admin/admin.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { LoginModule } from './login/login.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LoginModule
+    LoginModule,
+    AdminModule
   ],
   providers: [],
   bootstrap: [AppComponent]
