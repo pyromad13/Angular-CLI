@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CustomerComponent } from './customer/customer.component';
 import { SearchBoxDirective } from './search-box.directive';
+import { OrdersComponent } from './orders/orders.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CustomerComponent,
-    SearchBoxDirective
+    SearchBoxDirective,
+    OrdersComponent
   ],
   imports: [
     BrowserModule,
