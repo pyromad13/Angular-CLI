@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { CustomerComponent } from './customer/customer.component';
 import { SearchBoxDirective } from './search-box.directive';
 import { OrdersComponent } from './orders/orders.component';
+import { InitCapsPipe } from './shared/init-caps.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     CustomerComponent,
     SearchBoxDirective,
-    OrdersComponent
+    OrdersComponent,
+    InitCapsPipe
   ],
   imports: [
     BrowserModule,
