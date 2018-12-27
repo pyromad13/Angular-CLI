@@ -9,6 +9,12 @@ import { OrdersComponent } from './orders/orders.component';
 import { InitCapsPipe } from './shared/init-caps.pipe';
 import { LoginModule } from './login/login.module';
 import { AdminModule } from './admin/admin.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NavComponent } from './nav/nav.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatGridListModule, MatCardModule, MatMenuModule, MatTableModule, MatPaginatorModule, MatSortModule } from '@angular/material';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { CustomerListComponent } from './customer-list/customer-list.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +22,29 @@ import { AdminModule } from './admin/admin.module';
     CustomerComponent,
     SearchBoxDirective,
     OrdersComponent,
-    InitCapsPipe
+    InitCapsPipe,
+    NavComponent,
+    DashboardComponent,
+    CustomerListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     LoginModule,
-    AdminModule
+    AdminModule,
+    BrowserAnimationsModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule,
+    MatGridListModule,
+    MatCardModule,
+    MatMenuModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]
